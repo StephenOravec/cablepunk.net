@@ -1,0 +1,238 @@
+/* ================================
+   BASE
+   ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #16161d;
+    color: #ffffff;
+    font-family: "SF Mono", "Fira Code", "Consolas", "Monaco", "Courier New", monospace;
+    min-height: 100vh;
+    line-height: 1.8;
+}
+
+/* ================================
+   MAIN CONTENT
+   ================================ */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 20px 1rem 20px;
+}
+
+/* ================================
+   TYPOGRAPHY
+   ================================ */
+h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: normal;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+/* ================================
+   LINKS
+   ================================ */
+a {
+    color: #88ccff;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #aaddff;
+}
+
+/* ================================
+   LISTS
+   ================================ */
+ul {
+    margin-bottom: 1.25rem;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+/* ================================
+   EDITORIAL STATEMENT
+   ================================ */
+.editorial-statement {
+    font-size: 14px;
+    opacity: 0.7;
+    border-left: 2px solid #88ccff;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* ================================
+   UPDATED DATE
+   ================================ */
+.updated {
+    font-size: 14px;
+    margin-top: 3rem;
+    opacity: 0.7;
+}
+
+/* ================================
+   EXTERNAL LINK INDICATORS
+   ================================ */
+a[target="_blank"]::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 0.3em;
+    background-color: currentColor;
+    mask-image: url('/images/open-outline.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url('/images/open-outline.svg');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    vertical-align: -0.1em;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    font-style: normal;
+}
+
+a[target="_blank"]:hover::after {
+    opacity: 1;
+}
+
+/* ================================
+   SCREEN READER
+   ================================ */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 20px 3rem 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.byline {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+
+.license {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 1.25rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.footer-icons a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-icons a:hover {
+    color: #ffffff;
+}
+
+/* No external link icon on footer icons */
+.footer-icons a::after {
+    display: none;
+}
+
+/* ================================
+   DESKTOP (768px and up)
+   ================================ */
+@media (min-width: 768px) {
+    main {
+        padding: 3rem 30px 1rem 30px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        font-size: 26px;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font-size: 20px;
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .editorial-statement {
+        font-size: 15px;
+    }
+
+    .updated {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 2rem 30px 4rem 30px;
+    }
+}
