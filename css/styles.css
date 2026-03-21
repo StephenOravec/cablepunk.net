@@ -66,13 +66,13 @@ p {
    LINKS
    ================================ */
 a {
-    color: #88ccff;
+    color: #88ddaa;
     text-decoration: underline;
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: #aaddff;
+    color: #aaeebb;
 }
 
 /* ================================
@@ -94,7 +94,7 @@ li {
 .editorial-statement {
     font-size: 14px;
     opacity: 0.7;
-    border-left: 2px solid #88ccff;
+    border-left: 2px solid #88ddaa;
     padding-left: 1rem;
     margin-bottom: 2rem;
 }
@@ -168,8 +168,7 @@ footer {
 }
 
 .license {
-    font-size: 13px;
-    opacity: 0.7;
+    font-size: 14px;
     margin-bottom: 1.25rem;
 }
 
